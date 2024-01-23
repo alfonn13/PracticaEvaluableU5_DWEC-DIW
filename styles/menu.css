@@ -31,6 +31,13 @@ ol,ul{
     height: var(--altura_header);
     background-color: white;
 }
+
+.logo-a{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
 .navbar {
     height: 100%;
     display: flex;

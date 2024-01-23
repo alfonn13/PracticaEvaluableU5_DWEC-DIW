@@ -257,3 +257,69 @@ footer{
 .errores{
     color: red;
 }
+
+.container-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgb(151,190,215);
+background: linear-gradient(90deg, rgba(151,190,215,1) 0%, rgba(213,220,240,1) 100%);
+
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.imgAgencia{
+    width: 75%;
+    height: 40vh;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+
+.h1-nosotros{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.p-nosotros{
+    font-size: 1.5rem;
+}
+
+.container-texto{
+    padding-left: 6rem;
+    width: 85%;
+}
+
+.container-elegirnos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgb(151,190,215);
+    background: linear-gradient(90deg, rgba(151,190,215,1) 0%, rgba(213,220,240,1) 100%);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.imgAgencia2{
+    width: 75%;
+    height: 40vh;
+    margin-left: 6rem;
+}
+
+.p-elegirnos{
+    font-size: 1.5rem;
+    padding-left: 6rem;
+    width: 85%;
+}
+
+.h1-elegir{
+    font-size: 3rem;
+    padding: 2.5rem;
+    text-align: center;
+    background: rgb(151,190,215);
+    background: linear-gradient(90deg, rgba(151,190,215,1) 0%, rgba(213,220,240,1) 100%);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
