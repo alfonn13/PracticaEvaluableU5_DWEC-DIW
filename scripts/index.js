@@ -1,3 +1,8 @@
+/*
+Alfonso Reviejo Valle
+https://github.com/alfonn13/PracticaEvaluableU5_DWEC-DIW
+*/
+
 const formulario = document.querySelector('#formulario');
 const nombre = document.querySelector('#nombre');
 const apellido = document.querySelector('#apellido');
