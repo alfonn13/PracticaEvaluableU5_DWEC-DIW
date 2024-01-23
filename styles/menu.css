@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url(../assets/fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+:root {
+    --color_blanco: #fff;
+    --altura_header: 120px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.list_icon{
+    padding-top: 20px;
+    width: 60px;
+    height: 80px;
+}
+ol,ul{
+    list-style: none;
+}
+.header {
+    height: var(--altura_header);
+    background-color: white;
+}
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+    z-index: 1000;
+}
+.menu_hamburguesa{
+    display: none;
+    color: black;
+}
+.menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - var(--altura_header));
+}
+
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+.ul_links {
+    width: 100%;
+    background-color: white;
+    
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    transition: all .3s;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+}
+.link {
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+}
+
+@media (min-width:880px){
+    .labe_hamburguesa {
+        display: none;
+    }
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .link{
+        font-size: 1.8rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }
+    .link:hover{
+        background-color: rgb(197, 183, 183);
+        margin: 1rem;
+        cursor: pointer;
+        border-radius: 1rem;
+        font-size: 2rem;
+    }
+}
