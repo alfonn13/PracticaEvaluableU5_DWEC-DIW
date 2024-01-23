@@ -12,5 +12,29 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Otros eventos o funciones relacionados con el scroll u otras interacciones aquí...
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var menuIcon = document.getElementById('menu-icon');
+
+    menuIcon.addEventListener('click', function() {
+        toggleMenu();
+    });
+});
+
+function toggleMenu() {
+    var hamburgerIcon = document.getElementById('hamburger-icon');
+    var crossIcon = document.getElementById('cross-icon');
+
+    // Verificar el estado actual y cambiar la visibilidad en consecuencia
+    if (hamburgerIcon.style.display === 'none') {
+        // Si el ícono de hamburguesa está oculto, mostrarlo y ocultar la cruz
+        hamburgerIcon.style.display = '';
+        crossIcon.style.display = 'none';
+    } else {
+        // Si el ícono de hamburguesa está visible, ocultarlo y mostrar la cruz
+        hamburgerIcon.style.display = 'none';
+        crossIcon.style.display = '';
+    }
+}
+
