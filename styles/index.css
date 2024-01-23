@@ -75,9 +75,9 @@ body{
 
 
 .card-container {
-    border: 1px solid #ccc; /* Ajusta el color y estilo del borde según sea necesario */
-    border-radius: 5px; /* Ajusta el radio de la esquina según sea necesario */
-    overflow: hidden; /* Para asegurar que los bordes se apliquen correctamente */
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    overflow: hidden;
     width: 75%;
     margin: 0 auto;
     background: rgb(3,31,51);
@@ -90,7 +90,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2rem; /* Ajusta el relleno según sea necesario */
+    padding: 2rem;
     height: 80vh;
     
 }
@@ -145,6 +145,14 @@ body{
     margin-top: 1rem;
 }
 
+.button:hover{
+    background-color: rgb(242, 236, 236);
+    font-size: 1.3rem;
+    transition: .3s;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
 .h1-cards{
     font-size: 3rem;
     text-align: center;
@@ -164,6 +172,16 @@ body{
     text-align: center;
     padding-bottom: 30px;
     color: white;
+}
+
+@media (width = 1024px) {
+    .cards{
+        height: 200vh;
+    }
+
+    .card{
+        height: 60vh;
+    }
 }
 @media (width = 820px) {
     .cards{
@@ -227,13 +245,7 @@ body{
     .p-cards{
         font-size: 1rem;
     }
-
- 
-    
-
-
-    
-    
+  
 }
 
 @media screen and (max-width: 480px){
@@ -312,11 +324,7 @@ body{
     .card{
         width: 100%;
     }
-
-    
-
   
-    
 }
 
 @media screen and (min-width: 1200px) {
