@@ -17,19 +17,20 @@ const validar = e => {
     // Nombre como campo obligatorio (si es verdadero hace el push)
     nombre.value.trim().length === 0 && mensajesError.push('El campo nombre es obligatorio');
     
-    // Nombre caracteres validos
+    // Caracteres del nombre validos
     !/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(nombre.value.trim()) && mensajesError.push('El campo nombre solo puede contener letras y espacios en blanco');
 
-    // Apellido como campo obligatorio (si es verdadero hace el push)
+    // Apellido como campo obligatorio
     apellido.value.trim().length === 0 && mensajesError.push('El campo apellido es obligatorio');
     !/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(apellido.value.trim()) && mensajesError.push('El campo apellido solo puede contener letras y espacios en blanco');
 
-    // Email validos    
+    // Email valido   
     !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(correo.value.trim()) && mensajesError.push('El Correo debe tener el formato correcto');
 
     // Telefono valido
     !/^\d{7,14}$/.test(telefono.value.trim()) && mensajesError.push('El campo telefono solo puede contener números y debe tener entre 7 y 14 dígitos');
             
+    // Mensaje como campo obligatorio
     mensaje.value.trim().length < 10 && mensajesError.push('Mensaje muy corto');
     
     if (mensajesError.length === 0 && confirm('¿Desea enviar el formulario?')) {
